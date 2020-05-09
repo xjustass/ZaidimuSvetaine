@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <title>{{ config('app.name', 'VDU Games') }}</title>
+    <title>Vdu Games</title>
 
     <!--  <script src="{{ asset('js/app.js') }}" defer></script>-->
 
