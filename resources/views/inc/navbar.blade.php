@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
-  <a class="navbar-brand" href="#">{{ config('app.name', 'VDU Games') }}</a>
+  <a class="navbar-brand" href="/">{{ config('app.name', 'VDU Games') }}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -24,11 +24,11 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#">Submit a Game</a>
+        <a class="nav-link" href="/submit_game">Submit a Game</a>
       </li>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
+        <a class="nav-link" href="/about">About Us</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">

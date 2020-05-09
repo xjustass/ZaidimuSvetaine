@@ -21,11 +21,11 @@
 
 </head>
 <body>
-    @include('inc/navbar')
-    @yield('content')
-    @yield('content1')
-    <div id="app">
 
+    <div id="app">
+        @include('inc/navbar')
+        @yield('content')
+        @yield('content1')
     </div>
 </body>
 </html>
