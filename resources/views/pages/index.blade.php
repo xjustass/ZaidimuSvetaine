@@ -49,8 +49,23 @@
 
     <!-- Page footer -->
 
-    <div style="bottom: 0; left: 0; width: 100%; height: 100px; background-color:#BDE626; vertical-align: center">
-        <div class="pl-4" style="font-size: 30px;"><strong>Logo</strong></div>
-    </div>
+    <footer class="footer mt-auto py-3 bg-custom">
+        <div class="container">
+            <div class="row" style="vertical-align: center">
+                <div class="col-2" style="font-size: 50px">
+                    <strong>Logo</strong>
+                </div>
+                <div class="col-8">
+
+                </div>
+                <div class="col-2">
+                    <div>Categories</div>
+                    <div>About us</div>
+                    <div>Sign in/Log in</div>
+                    <div>My Account</div>
+                </div>
+            </div>
+        </div>
+    </footer>
 @endsection
 
