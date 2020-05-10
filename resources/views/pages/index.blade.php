@@ -17,7 +17,7 @@
 
     <!-- Game Tiles -->
 
-    <div style="margin: 0 auto; width: max-content; height: max-content; color: #BDE626; text-align: center; font-weight: bold">
+    <div style="margin: 0 auto; width: max-content; height: max-content; color: #FFFFFF; text-align: center; font-weight: bold">
         <div class="d-flex">
             <div class="col">
                 <div class="pr-5"><img class="tileimage" height="250" width="250" src="https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/mega-man-11-switch/mega-man-11-switch-hero.jpg"></div>
