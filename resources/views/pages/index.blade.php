@@ -5,7 +5,7 @@
     <div>
         <br>
     </div>
-    <div style="text-align: center; background-color:#BDE626">
+    <div class="textgray" style="text-align: center; background-color:#BDE626">
         <div class="pt-3 pb-1 display: inline-block" >
             <p><strong>Joke of the day:</strong>
                 <br>I fear my stuttering brother may never finish his prison sentence</p>
@@ -18,7 +18,7 @@
     <!-- Game Tiles -->
 
     <div style="margin: 0 auto; width: max-content; height: max-content; color: #FFFFFF; text-align: center; font-weight: bold">
-        <div class="d-flex">
+        <div class="d-flex textgreen">
             <div class="col">
                 <div class="pr-5"><img class="tileimage" height="250" width="250" src="https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/mega-man-11-switch/mega-man-11-switch-hero.jpg"></div>
                 <div class="pr-5">Game Title</div>
@@ -38,7 +38,7 @@
 
     <!-- Game Statistics -->
 
-    <div style="border-radius:20px ; border: 5px solid #BDE626; height: 100px; width: 900px; margin: 0 auto;">
+    <div style="border-radius:20px ; border: 5px solid #BDE626; height: 100px; width: 900px; margin: 0 auto;" class="textgreen">
         <div class="col"></div>
         <div class="col"></div>
         <div class="col"></div>
@@ -51,14 +51,14 @@
 
     <footer class="footer mt-auto py-3 bg-custom">
         <div class="container">
-            <div class="row" style="vertical-align: center">
-                <div class="col-2" style="font-size: 50px">
+            <div class="row" style="vertical-align: middle">
+                <div class="col-2 textgray" style="font-size: 50px">
                     <strong>Logo</strong>
                 </div>
                 <div class="col-8">
 
                 </div>
-                <div class="col-2">
+                <div class="col-2 textgray">
                     <div>Categories</div>
                     <div>About us</div>
                     <div>Sign in/Log in</div>
