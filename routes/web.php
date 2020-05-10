@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
+Route::get('/submit_game', 'PagesController@submit_game');
+
 
 Auth::routes();
 

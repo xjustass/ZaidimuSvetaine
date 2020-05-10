@@ -13,4 +13,8 @@ class PagesController extends Controller
     public function about(){
         return view('pages.about');
     }
+
+    public function submit_game(){
+        return view('pages.submit_game');
+    }
 }
