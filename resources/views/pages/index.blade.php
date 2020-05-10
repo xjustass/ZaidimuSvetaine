@@ -32,20 +32,25 @@
                 <div>Game Title</div>
             </div>
         </div>
+    </div>
 
-        <br>
+    <br>
 
-        <div style="border-radius:20px ; border: 5px solid #BDE626; height: 100px; width: 900px; margin: 0 auto;">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-        </div>
+    <!-- Game Statistics -->
 
-        <br>
+    <div style="border-radius:20px ; border: 5px solid #BDE626; height: 100px; width: 900px; margin: 0 auto;">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
 
-        <div style="bottom: 0; left: 0; width: 100%; height: 100px; background-color:#BDE626; vertical-align: center">
-            <div class="pl-4" style="font-size: 30px;"><strong>Logo</strong></div>
-        </div>
+    <br>
+
+    <!-- Page footer -->
+
+    <div style="bottom: 0; left: 0; width: 100%; height: 100px; background-color:#BDE626; vertical-align: center">
+        <div class="pl-4" style="font-size: 30px;"><strong>Logo</strong></div>
+    </div>
 @endsection
 
