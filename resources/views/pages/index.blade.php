@@ -17,8 +17,8 @@
 
     <!-- Game Tiles -->
 
-    <div style="margin: 0 auto; width: max-content; height: max-content; color: #FFFFFF; text-align: center; font-weight: bold">
-        <div class="d-flex textgreen">
+    <div style="color: #FFFFFF; text-align: center; font-weight: bold" class="mx-auto">
+        <div class="d-flex textgreen" style="width: 60%">
             <div class="col">
                 <div class="pr-5"><img class="tileimage" height="250" width="250" src="https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/mega-man-11-switch/mega-man-11-switch-hero.jpg"></div>
                 <div class="pr-5">Game Title</div>
@@ -38,20 +38,20 @@
 
     <!-- Game Statistics -->
 
-    <div style="border-radius:20px ; border: 5px solid #BDE626; height: 100px; width: 900px; margin: 0 auto;" class="textgreen">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
+    <div style="border-radius:20px ; border: 5px solid #BDE626; height: 100px; width: 60%" class="row textgreen mx-auto">
+        <div class="col-3">game stats</div>
+        <div class="col-3">blip</div>
+        <div class="col-3">bloop</div>
+        <div class="col-3">bleep</div>
     </div>
 
     <br>
 
     <!-- Page footer -->
 
-    <footer class="footer mt-auto py-3 bg-custom">
+    <footer class="footer my-auto py-3 bg-custom">
         <div class="container">
-            <div class="row" style="vertical-align: middle">
+            <div class="row align-items-center">
                 <div class="col-2 textgray" style="font-size: 50px">
                     <strong>Logo</strong>
                 </div>
