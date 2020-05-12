@@ -155,7 +155,11 @@
 
     <br>
 
+@endsection
+
 <!-- Page footer -->
+
+@section('footer')
 
     <footer class="footer my-auto py-3 bg-custom">
         <div class="container">
