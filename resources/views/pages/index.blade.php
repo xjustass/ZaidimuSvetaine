@@ -46,7 +46,7 @@
         <!-- Gta V -->
         
         <div class="row justify-content-center no-gutters">
-            <div class="col-xl-2 col-lg-4 mb-3">
+            <div class="col-xl-2 col-lg-5 col-5 mb-3">
                 <div class="card statistics-card h-100">
                 <img class="card-img-top" src={{ asset('img/gta_v.jpg') }} alt="Gta v image">
                 <div class="card-body">
@@ -62,8 +62,8 @@
             </div>
 
          <!--   Counter-Strike: Global Offensive -->
-         <div class="col-xl-2 col-lg-4 mb-3">
-            <div class="card statistics-card h-100">
+         <div class="col-xl-2 col-lg-5 col-5 mb-3 shadow-sm hover-shadow-2">
+            <div class="card statistics-card h-100 ">
                 <img class="card-img-top" src={{ asset('img/csgo.jpg') }} alt="Counter-Strige Global Offensive">
                 <div class="card-body">
                
@@ -76,7 +76,7 @@
             </div>
         </div>
 
-        <div class="col-xl-2 col-lg-4 mb-3">
+        <div class="col-xl-2 col-lg-5 col-5 mb-3">
             <div class="card statistics-card h-100">
                 <img class="card-img-top" src={{ asset('img/rust.jpg') }} alt="Counter-Strige Global Offensive">
                 <div class="card-body">
@@ -90,7 +90,7 @@
             </div>
         </div>
 
-        <div class="col-xl-2 col-lg-4 mb-3">
+        <div class="col-xl-2 col-lg-5 col-5 mb-3">
             <div class="card statistics-card h-100">
                
                 <img class="card-img-top embed-responsive-item" src={{ asset('img/terraria.jpg') }} alt="Counter-Strige Global Offensive">
@@ -105,7 +105,7 @@
             </div>
         </div>
 
-        <div class="col-xl-2 col-lg-4 mb-3">
+        <div class="col-xl-2 col-lg-5 col-5 mb-3">
             <div class="card statistics-card h-100">
                 <img class="card-img-top" src={{ asset('img/mb2.jpg') }} alt="Counter-Strige Global Offensive">
                 <div class="card-body">
