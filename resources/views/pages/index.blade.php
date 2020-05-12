@@ -17,46 +17,47 @@
 
     <!-- Game Tiles -->
 
-    <div class="card-deck mx-auto pb-4" style="width: 65%">
+    <div class="card-deck mx-auto" style="width: 65%">
 
         <div class="card gametilecard">
             <div class="card-body text-center">
                 <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
-                <p class="card-text textgreen pt-3">Game Title</p>
+                <p class="card-text textgreen pt-2 pb-3">Game Title</p>
             </div>
         </div>
         <div class="card gametilecard">
             <div class="card-body text-center">
                 <img class="tileimage " src="https://steamcdn-a.akamaihd.net/steam/apps/673950/capsule_616x353.jpg?t=1587112970">
-                <p class="card-text textgreen pt-3">Game Title</p>
+                <p class="card-text textgreen pt-2 pb-3">Game Title</p>
             </div>
         </div>
         <div class="card gametilecard">
             <div class="card-body text-center">
                 <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
-                <p class="card-text textgreen pt-3">Game Title</p>
+                <p class="card-text textgreen pt-2 pb-3">Game Title</p>
             </div>
         </div>
     </div>
+    <br>
 
-    <div class="card-deck mx-auto pb-4" style="width: 65%">
+    <div class="card-deck mx-auto" style="width: 65%">
 
         <div class="card gametilecard">
             <div class="card-body text-center">
                 <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
-                <p class="card-text textgreen pt-3">Game Title</p>
+                <p class="card-text textgreen pt-2 pb-3">Game Title</p>
             </div>
         </div>
         <div class="card gametilecard">
             <div class="card-body text-center">
                 <img class="tileimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_2sO-dXYPN9cwj6V8nmRmbAWs0yqcfDHjp-9-hY7WYpZBnZPz&usqp=CAU">
-                <p class="card-text textgreen pt-3">Game Title</p>
+                <p class="card-text textgreen pt-2 pb-3">Game Title</p>
             </div>
         </div>
         <div class="card gametilecard">
             <div class="card-body text-center">
                 <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
-                <p class="card-text textgreen pt-3">Game Title</p>
+                <p class="card-text textgreen pt-2 pb-3">Game Title</p>
             </div>
         </div>
     </div>
