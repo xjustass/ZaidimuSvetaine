@@ -17,22 +17,51 @@
 
     <!-- Game Tiles -->
 
-    <div style="color: #FFFFFF; text-align: center; font-weight: bold" class="mx-auto">
-        <div class="d-flex textgreen" style="width: 60%">
-            <div class="col">
-                <div class="pr-5"><img class="tileimage" height="250" width="250" src="https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/mega-man-11-switch/mega-man-11-switch-hero.jpg"></div>
-                <div class="pr-5">Game Title</div>
+    <div class="card-deck mx-auto pb-4" style="width: 65%">
+
+        <div class="card gametilecard">
+            <div class="card-body text-center">
+                <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
+                <p class="card-text textgreen pt-3">Game Title</p>
             </div>
-            <div class="col">
-                <div class="pr-5"><img class="tileimage" height="250" width="250" src="https://i.pinimg.com/236x/01/8f/48/018f4844e710954efeaaaaa7023886ff--mega-man-videogames.jpg"></div>
-                <div class="pr-5">Game Title</div>
+        </div>
+        <div class="card gametilecard">
+            <div class="card-body text-center">
+                <img class="tileimage " src="https://steamcdn-a.akamaihd.net/steam/apps/673950/capsule_616x353.jpg?t=1587112970">
+                <p class="card-text textgreen pt-3">Game Title</p>
             </div>
-            <div class="col">
-                <div><img class="tileimage" height="250" width="250" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg"></div>
-                <div>Game Title</div>
+        </div>
+        <div class="card gametilecard">
+            <div class="card-body text-center">
+                <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
+                <p class="card-text textgreen pt-3">Game Title</p>
             </div>
         </div>
     </div>
+
+    <div class="card-deck mx-auto pb-4" style="width: 65%">
+
+        <div class="card gametilecard">
+            <div class="card-body text-center">
+                <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
+                <p class="card-text textgreen pt-3">Game Title</p>
+            </div>
+        </div>
+        <div class="card gametilecard">
+            <div class="card-body text-center">
+                <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
+                <p class="card-text textgreen pt-3">Game Title</p>
+            </div>
+        </div>
+        <div class="card gametilecard">
+            <div class="card-body text-center">
+                <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
+                <p class="card-text textgreen pt-3">Game Title</p>
+            </div>
+        </div>
+    </div>
+
+
 
     <br>
 
@@ -126,8 +155,12 @@
 
     <br>
 
-    <!-- Page footer -->
 
+@endsection
+
+<!-- Page footer -->
+
+@section('footer')
     <footer class="footer my-auto py-3 bg-custom">
         <div class="container">
             <div class="row align-items-center">

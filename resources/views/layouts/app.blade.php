@@ -26,6 +26,7 @@
         @include('inc/navbar')
         @yield('content')
         @yield('content1')
+        @yield('footer')
     </div>
 
 
