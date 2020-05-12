@@ -3,14 +3,21 @@ body{
     background-color: #474747;
 }
 
+
 .bg-custom{
     background-color: #BDE626 !important;
 
 }
 
+.statistics-card{
+    background-color: #575656;
+    padding: 8px 10px 8px 10px;
+}
+
+
 .nav-link{
 
-    color: #474747 !important;
+    color: #585858 !important;
 }
 
 .fa-gamepad{
@@ -24,6 +31,13 @@ body{
 
     font-size: 25px;
     padding-right: 5px;
+    vertical-align: middle;
+}
+
+.icon-spacing{
+
+    font-size: 14px;
+    padding-right: 10px;
     vertical-align: middle;
 }
 
@@ -66,6 +80,14 @@ body{
     color: #474747;
 
 }
+.embed-responsive .card-img-top {
+    object-fit: cover;
+}
+
+.embed-responsive-9by16{
+    padding-bottom: 56.25%;
+}
+
 
 
 

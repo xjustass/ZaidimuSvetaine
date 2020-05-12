@@ -580,8 +580,8 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -616,8 +616,8 @@ pre code {
 .container-md,
 .container-sm {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -659,8 +659,8 @@ pre code {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -5px;
+  margin-left: -5px;
 }
 
 .no-gutters {
@@ -746,8 +746,8 @@ pre code {
 .col-1 {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .col {
@@ -5080,27 +5080,27 @@ input[type=button].btn-block {
 }
 
 .card-deck .card {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 @media (min-width: 576px) {
   .card-deck {
     display: flex;
     flex-flow: row wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -5px;
+    margin-left: -5px;
   }
 
   .card-deck .card {
     flex: 1 0 0%;
-    margin-right: 15px;
+    margin-right: 5px;
     margin-bottom: 0;
-    margin-left: 15px;
+    margin-left: 5px;
   }
 }
 
 .card-group > .card {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 @media (min-width: 576px) {
@@ -10894,8 +10894,13 @@ body {
   background-color: #BDE626 !important;
 }
 
+.statistics-card {
+  background-color: #575656;
+  padding: 8px 10px 8px 10px;
+}
+
 .nav-link {
-  color: #474747 !important;
+  color: #585858 !important;
 }
 
 .fa-gamepad {
@@ -10907,6 +10912,12 @@ body {
 .fa-key {
   font-size: 25px;
   padding-right: 5px;
+  vertical-align: middle;
+}
+
+.icon-spacing {
+  font-size: 14px;
+  padding-right: 10px;
   vertical-align: middle;
 }
 
@@ -10945,5 +10956,14 @@ body {
 
 .textgray {
   color: #474747;
+}
+
+.embed-responsive .card-img-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.embed-responsive-9by16 {
+  padding-bottom: 56.25%;
 }
 

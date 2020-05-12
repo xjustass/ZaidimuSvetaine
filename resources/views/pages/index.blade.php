@@ -38,12 +38,91 @@
 
     <!-- Game Statistics -->
 
-    <div style="border-radius:20px ; border: 5px solid #BDE626; height: 100px; width: 60%" class="row textgreen mx-auto">
-        <div class="col-3">game stats</div>
-        <div class="col-3">blip</div>
-        <div class="col-3">bloop</div>
-        <div class="col-3">bleep</div>
+    <h2 class="text-center textgreen my-3"> Gamers playing right now:</h2>
+
+    <!--<div style="border-radius:20px ; width: 1400px; margin: 0 auto; padding-top: 15px;" class="container textgreen"> -->
+    <div style="margin: 0 auto; padding-top: 15px;" class="container textgreen">
+        <div class="card-deck">
+        <!-- Gta V -->
+
+        <div class="row justify-content-center no-gutters">
+            <div class="col-xl-2 col-lg-4 mb-3">
+                <div class="card statistics-card h-100">
+                <img class="card-img-top" src={{ asset('img/gta_v.jpg') }} alt="Gta v image">
+                <div class="card-body">
+
+                    <p class="card-text text-center">
+                        <i class="fas fa-user icon-spacing"></i>
+                        {{$game1_count}}
+                    </p>
+
+                    <h5 class="card-text text-center"> Grand Theft Auto V</h5>
+                </div>
+                </div>
+            </div>
+
+         <!--   Counter-Strike: Global Offensive -->
+         <div class="col-xl-2 col-lg-4 mb-3">
+            <div class="card statistics-card h-100">
+                <img class="card-img-top" src={{ asset('img/csgo.jpg') }} alt="Counter-Strige Global Offensive">
+                <div class="card-body">
+
+                <p class="card-text text-center">
+                    <i class="fas fa-user icon-spacing"></i>
+                    {{$game2_count}}
+                </p>
+                <h5 class="card-text text-center"> Counter-Strike: Global Offensive</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 mb-3">
+            <div class="card statistics-card h-100">
+                <img class="card-img-top" src={{ asset('img/rust.jpg') }} alt="Counter-Strige Global Offensive">
+                <div class="card-body">
+
+                <p class="card-text text-center">
+                    <i class="fas fa-user icon-spacing"></i>
+                    {{$game3_count}}
+                </p>
+                <h5 class="card-text text-center"> Rust</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 mb-3">
+            <div class="card statistics-card h-100">
+
+                <img class="card-img-top embed-responsive-item" src={{ asset('img/terraria.jpg') }} alt="Counter-Strige Global Offensive">
+                <div class="card-body">
+
+                <p class="card-text text-center">
+                    <i class="fas fa-user icon-spacing"></i>
+                    {{$game4_count}}
+                </p>
+                <h5 class="card-text text-center"> Terraria</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 mb-3">
+            <div class="card statistics-card h-100">
+                <img class="card-img-top" src={{ asset('img/mb2.jpg') }} alt="Counter-Strige Global Offensive">
+                <div class="card-body">
+
+                <p class="card-text text-center">
+                    <i class="fas fa-user icon-spacing"></i>
+                    {{$game5_count}}
+                </p>
+                <h5 class="card-text text-center"> Mount & Blade II: Bannerlord</h5>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    </div>
+</div>
 
     <br>
 
