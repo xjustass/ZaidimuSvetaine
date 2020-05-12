@@ -20,3 +20,4 @@ Route::get('/submit_game', 'PagesController@submit_game');
 
 Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('home');
