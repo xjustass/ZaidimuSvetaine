@@ -61,6 +61,12 @@ body{
 .textgray{
     color: #474747;
 }
+
+.textlightgray{
+    font-weight: bold;
+    color: #afafaf;
+}
+
 .embed-responsive .card-img-top  {
     object-fit: cover;
 }
@@ -74,6 +80,12 @@ body{
     border: none;
 }
 
+.aboutsusphotos{
+    border-radius: 10%;
+    padding: 6px;
+    border: 5px solid #BDE626;
+    background-color:#474747;
+}
 
 
 
