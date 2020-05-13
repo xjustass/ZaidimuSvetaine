@@ -179,23 +179,23 @@
 
 @section('footer')
 
-    <footer class="footer my-auto py-3 bg-custom">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-2 textgray" style="font-size: 50px">
-                    <strong>Logo</strong>
-                </div>
-                <div class="col-8">
+        <footer class="footer py-3 bg-custom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-2 textgray" style="font-size: 50px">
+                        <strong>Logo</strong>
+                    </div>
+                    <div class="col-8">
 
-                </div>
-                <div class="col-2 textgray">
-                    <div>Categories</div>
-                    <div>About us</div>
-                    <div>Sign in/Log in</div>
-                    <div>My Account</div>
+                    </div>
+                    <div class="col-2 textgray">
+                        <div>Categories</div>
+                        <div>About us</div>
+                        <div>Sign in/Log in</div>
+                        <div>My Account</div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
 @endsection
