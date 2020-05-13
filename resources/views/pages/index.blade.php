@@ -17,47 +17,64 @@
 
     <!-- Game Tiles -->
 
-    <div class="card-deck mx-auto" style="width: 65%">
+    <div class="card-deck mx-auto">
 
-        <div class="card gametilecard">
-            <div class="card-body text-center">
-                <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
-                <p class="card-text textgreen pt-2 pb-3">Game Title</p>
+        <div class="row justify-content-center mx-auto">
+            <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
+                <div class="card gametilecard">
+                    <div class="card-body text-center">
+                        <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
+                        <p class="card-text textgreen pt-2 pb-3">Game Title</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card gametilecard">
-            <div class="card-body text-center">
-                <img class="tileimage " src="https://steamcdn-a.akamaihd.net/steam/apps/673950/capsule_616x353.jpg?t=1587112970">
-                <p class="card-text textgreen pt-2 pb-3">Game Title</p>
+            <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
+                <div class="card gametilecard">
+                    <div class="card-body text-center">
+                        <img class="tileimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_2sO-dXYPN9cwj6V8nmRmbAWs0yqcfDHjp-9-hY7WYpZBnZPz&usqp=CAU">
+                        <p class="card-text textgreen pt-2 pb-3">Game Title</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card gametilecard">
-            <div class="card-body text-center">
-                <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
-                <p class="card-text textgreen pt-2 pb-3">Game Title</p>
+            <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
+                <div class="card gametilecard">
+                    <div class="card-body text-center">
+                        <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
+                        <p class="card-text textgreen pt-2 pb-3">Game Title</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <br>
 
-    <div class="card-deck mx-auto" style="width: 65%">
+    <div class="card-deck mx-auto">
 
-        <div class="card gametilecard">
-            <div class="card-body text-center">
-                <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
-                <p class="card-text textgreen pt-2 pb-3">Game Title</p>
+        <div class="row justify-content-center mx-auto">
+            <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
+                <div class="card gametilecard">
+                    <div class="card-body text-center mr-20">
+                        <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
+                        <p class="card-text textgreen pt-2 pb-3">Game Title</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card gametilecard">
-            <div class="card-body text-center">
-                <img class="tileimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_2sO-dXYPN9cwj6V8nmRmbAWs0yqcfDHjp-9-hY7WYpZBnZPz&usqp=CAU">
-                <p class="card-text textgreen pt-2 pb-3">Game Title</p>
+            <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
+                <div class="card gametilecard">
+                    <div class="card-body text-center">
+                        <img class="tileimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_2sO-dXYPN9cwj6V8nmRmbAWs0yqcfDHjp-9-hY7WYpZBnZPz&usqp=CAU">
+                        <p class="card-text textgreen pt-2 pb-3">Game Title</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card gametilecard">
-            <div class="card-body text-center">
-                <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
-                <p class="card-text textgreen pt-2 pb-3">Game Title</p>
+            <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
+                <div class="card gametilecard">
+                    <div class="card-body text-center">
+                        <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
+                        <p class="card-text textgreen pt-2 pb-3">Game Title</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -162,23 +179,23 @@
 
 @section('footer')
 
-    <footer class="footer my-auto py-3 bg-custom">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-2 textgray" style="font-size: 50px">
-                    <strong>Logo</strong>
-                </div>
-                <div class="col-8">
+        <footer class="footer py-3 bg-custom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-2 textgray" style="font-size: 50px">
+                        <strong>Logo</strong>
+                    </div>
+                    <div class="col-8">
 
-                </div>
-                <div class="col-2 textgray">
-                    <div>Categories</div>
-                    <div>About us</div>
-                    <div>Sign in/Log in</div>
-                    <div>My Account</div>
+                    </div>
+                    <div class="col-2 textgray">
+                        <div>Categories</div>
+                        <div>About us</div>
+                        <div>Sign in/Log in</div>
+                        <div>My Account</div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
 @endsection

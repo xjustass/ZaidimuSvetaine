@@ -37128,6 +37128,7 @@ __webpack_require__(/*! C:\Users\Saulius\TestinisProjektas\resources\js\app.js *
 module.exports = __webpack_require__(/*! C:\Users\Saulius\TestinisProjektas\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
+
 /***/ })
 
 /******/ });
