@@ -10931,8 +10931,6 @@ body {
   vertical-align: bottom;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 0% 0%;
-     object-position: 0% 0%;
 }
 
 .textgreen {
