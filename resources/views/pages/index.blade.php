@@ -8,7 +8,7 @@
     <div class="textgray" style="text-align: center; background-color:#BDE626">
         <div class="pt-3 pb-1 display: inline-block" >
             <p><strong>Joke of the day:</strong>
-                <br>I fear my stuttering brother may never finish his prison sentence</p>
+                <br>{{$joke}}</p>
         </div>
     </div>
 
