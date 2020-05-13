@@ -10929,8 +10929,6 @@ body {
   background-color: #474747;
   text-align: center;
   vertical-align: bottom;
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 0% 0%;
@@ -10958,6 +10956,5 @@ body {
 .gametilecard {
   background-color: #474747;
   border: none;
-  height: 350px;
 }
 
