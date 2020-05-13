@@ -2,8 +2,7 @@
 
 @section('content')
     <br>
-    <div class= "textgreen" style="text-align: center; font-size: 300%;">
-    <p>Submit your Game</p></div>
+    <h1 class="textgreen" style="text-align: center">Submit your Game</h1>
     <br>
 
     <div class="container">
