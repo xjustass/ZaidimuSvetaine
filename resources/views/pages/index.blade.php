@@ -5,7 +5,6 @@
     <!-- Banner Carousel -->
 
 
-    <div class="container mx-auto d-lg-none" style="width: 100%">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -14,17 +13,17 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src=https://www.allkeyshop.com/blog/wp-content/uploads/Starcraft-Remastered_BANNER.jpg" alt="First slide">
+                    <img class="d-block w-100 tales" src="https://www.allkeyshop.com/blog/wp-content/uploads/Starcraft-Remastered_BANNER.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h5></h5>
                         <p>trumpas nuotraukos/banner aprasymas</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://hdwallsource.com/img/2017/10/heroes-of-the-storm-video-game-hd-wallpaper-61888-63745-hd-wallpapers.jpg" alt="Second slide">
+                    <img class="d-block w-100 tales" src="https://hdwallsource.com/img/2017/10/heroes-of-the-storm-video-game-hd-wallpaper-61888-63745-hd-wallpapers.jpg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://wallpapertag.com/wallpaper/full/b/c/d/237829-free-download-fallout-4-wallpaper-1080p-1920x1080.jpg" alt="Third slide">
+                    <img class="d-block w-100 tales" src="https://wallpapertag.com/wallpaper/full/b/c/d/237829-free-download-fallout-4-wallpaper-1080p-1920x1080.jpg" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -36,41 +35,6 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </div>
-
-    <div class="container mx-auto d-none d-lg-block" style="width: 65%">
-        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-            </ol>
-
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src=https://www.allkeyshop.com/blog/wp-content/uploads/Starcraft-Remastered_BANNER.jpg" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5></h5>
-                        <p>trumpas nuotraukos/banner aprasymas</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="https://hdwallsource.com/img/2017/10/heroes-of-the-storm-video-game-hd-wallpaper-61888-63745-hd-wallpapers.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="https://wallpapertag.com/wallpaper/full/b/c/d/237829-free-download-fallout-4-wallpaper-1080p-1920x1080.jpg" alt="Third slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
 
 
     <!-- Joke Api -->
