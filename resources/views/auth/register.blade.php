@@ -10,7 +10,7 @@
     padding: 8px;
     border: 5px solid #BDE626;
     background-color:#474747;">
-                <div class="card-header" style="text-align: center; border: none;background: #BDE626; font-weight: bold; font-size: 300%; border-top-left-radius: 15px;  border-top-right-radius: 15px">{{ __('Register') }}</div>
+                <div class="card-header textgray" style="text-align: center; border: none;background: #BDE626; font-weight: bold; font-size: 300%; border-top-left-radius: 15px;  border-top-right-radius: 15px">{{ __('Register') }}</div>
 
                 <div class="card-body" style="background: #BDE626; border-bottom-left-radius: 15px;  border-bottom-right-radius: 15px">
                     <form method="POST" action="{{ route('register') }}">
@@ -79,9 +79,5 @@
         </div>
     </div>
 </div>
+<br>
 @endsection
-<body>
-<div id="app">
-    @yield('footer')
-</div>
-</body>

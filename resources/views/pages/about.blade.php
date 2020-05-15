@@ -1,11 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<<<<<<< HEAD
-    <h1>About</h1>
-
-
-=======
 
     <div class="pt-3" style="text-align: center"><h1 class="textgreen">About Us</h1></div>
 
@@ -69,7 +64,6 @@
         </div>
 
     </div>
->>>>>>> 4496d002b6b70541bac619d76d5f149ee84da606
-
+    <br>
 @endsection
 

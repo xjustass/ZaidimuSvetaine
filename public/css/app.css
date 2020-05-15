@@ -10888,6 +10888,7 @@ a.text-dark:focus {
 
 body {
   background-color: #474747;
+  height: 100%;
 }
 
 .bg-custom {
@@ -10974,5 +10975,9 @@ body {
 
 .item {
   height: 300px;
+}
+
+.allbutfooter {
+  min-height: calc(100vh - 122px);
 }
 

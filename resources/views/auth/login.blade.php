@@ -10,7 +10,7 @@
     padding: 8px;
     border: 5px solid #BDE626;
     background-color:#474747;" >
-                <div class="card-header" style="text-align: center; border: none;background: #BDE626; font-weight: bold; font-size: 300%; border-top-left-radius: 15px;  border-top-right-radius: 15px">{{ __('Login') }}</div>
+                <div class="card-header textgray" style="text-align: center; border: none;background: #BDE626; font-weight: bold; font-size: 300%; border-top-left-radius: 15px;  border-top-right-radius: 15px">{{ __('Login') }}</div>
 
                 <div class="card-body" style="background: #BDE626; border-bottom-left-radius: 15px;  border-bottom-right-radius: 15px">
                     <form method="POST" action="{{ route('login') }}">
@@ -75,24 +75,6 @@
         </div>
     </div>
 </div>
-
-<footer class="footer py-3 bg-custom" style="position: absolute; bottom: 0; width: 100%">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-2 textgray" style="font-size: 50px">
-                <strong>Logo</strong>
-            </div>
-            <div class="col-8">
-
-            </div>
-            <div class="col-2 textgray">
-                <div>Categories</div>
-                <div>About us</div>
-                <div>Sign in/Log in</div>
-                <div>My Account</div>
-            </div>
-        </div>
-    </div>
-</footer>
+<br>
 
 @endsection

@@ -23,10 +23,12 @@
 <body>
 
     <div id="app">
-        @include('inc/navbar')
-        @yield('content')
-        @yield('content1')
-        @yield('footer')
+        <div class="allbutfooter">
+            @include('inc/navbar')
+            @yield('content')
+            @yield('content1')
+        </div>
+        @include('inc/footer')
     </div>
 
 
