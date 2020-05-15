@@ -36,13 +36,16 @@ Route::get('/test', function() {
         ->where('extension', '=', pathinfo($filename, PATHINFO_EXTENSION))
         ->first(); // there can be duplicate file names!
 
-    //return $file; // array with file info
+  //  return $file; // array with file info
 
     $rawData = Storage::cloud()->get($file['path']);
 
-    return response($rawData, 200)
-        ->header('ContentType', $file['mimetype'])
-        ->header('Content-Disposition', "attachment; filename=$filename");
+
+    return Storage::cloud()->download($file['path'],$filename);
+
+    //return response($rawData, 200)
+      //  ->header('ContentType', $file['mimetype'])
+      //  ->header('Content-Disposition', "attachment; filename=$filename");
 
 
 
