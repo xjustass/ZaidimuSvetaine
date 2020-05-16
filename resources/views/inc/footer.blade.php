@@ -9,10 +9,12 @@
                 <div class="col-2">
                 </div>
                 <div class="col-3 textgray">
-                    <div><p style="line-height: 0px">Categories</p></div>
-                    <div><p style="line-height: 0px">About us</p></div>
-                    <div><p style="line-height: 0px">Sign in/Log in</p></div>
-                    <div><p style="line-height: 0px">My Account</p></div>
+                    <div class="container align-items-center">
+                        <div>Categories</div>
+                        <div>About us</div>
+                        <div>Sign in/Log in</div>
+                        <div>My Account</div>
+                    </div>
                 </div>
                 <div class="col-1">
                 </div>
