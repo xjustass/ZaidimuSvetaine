@@ -9,12 +9,13 @@
                 <div class="col-3">
                 </div>
                 <div class="col-3 textgray">
-                    <div class="container align-items-center">
+                    <div>
                         <div>Categories</div>
                         <div>About us</div>
-                        <div>Sign in / Log in</div>
+                        <div>Sign in/ Log in</div>
                         <div>My Account</div>
                     </div>
+                </div>
 
             </div>
         </div>
