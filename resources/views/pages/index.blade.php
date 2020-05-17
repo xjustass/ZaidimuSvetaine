@@ -13,7 +13,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100 tales" src="https://www.allkeyshop.com/blog/wp-content/uploads/Starcraft-Remastered_BANNER.jpg" alt="First slide">
+                    <img class="d-block w-100 tales" src="{{ asset('img/Jumpy_Banner.png') }}" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h5></h5>
                         <p>trumpas nuotraukos/banner aprasymas</p>
@@ -59,7 +59,15 @@
             <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
                 <div class="card gametilecard">
                     <div class="card-body text-center">
-                        <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
+                        <img class="tileimage" src="{{ asset('img/Jumpy_Icon.png') }}">
+                        <p class="card-text textgreen pt-2 pb-3">Jumpy Boy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
+                <div class="card gametilecard">
+                    <div class="card-body text-center">
+                        <img class="tileimage" src="{{ asset('img/Jumpy_Icon.png') }}">
                         <p class="card-text textgreen pt-2 pb-3">Game Title</p>
                     </div>
                 </div>
@@ -67,15 +75,7 @@
             <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
                 <div class="card gametilecard">
                     <div class="card-body text-center">
-                        <img class="tileimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_2sO-dXYPN9cwj6V8nmRmbAWs0yqcfDHjp-9-hY7WYpZBnZPz&usqp=CAU">
-                        <p class="card-text textgreen pt-2 pb-3">Game Title</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
-                <div class="card gametilecard">
-                    <div class="card-body text-center">
-                        <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
+                        <img class="tileimage" src="{{ asset('img/Jumpy_Icon.png') }}">
                         <p class="card-text textgreen pt-2 pb-3">Game Title</p>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
             <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
                 <div class="card gametilecard">
                     <div class="card-body text-center mr-20">
-                        <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
+                        <img class="tileimage" src="{{ asset('img/Jumpy_Icon.png') }}">
                         <p class="card-text textgreen pt-2 pb-3">Game Title</p>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
             <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
                 <div class="card gametilecard">
                     <div class="card-body text-center">
-                        <img class="tileimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_2sO-dXYPN9cwj6V8nmRmbAWs0yqcfDHjp-9-hY7WYpZBnZPz&usqp=CAU">
+                        <img class="tileimage" src="{{ asset('img/Jumpy_Icon.png') }}">
                         <p class="card-text textgreen pt-2 pb-3">Game Title</p>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
             <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
                 <div class="card gametilecard">
                     <div class="card-body text-center">
-                        <img class="tileimage" src="https://i.pinimg.com/236x/5c/ff/9e/5cff9eb0ea0687ed6b3770ec5d034b4e--the-robot-mega-man.jpg">
+                        <img class="tileimage" src="{{ asset('img/Jumpy_Icon.png') }}">
                         <p class="card-text textgreen pt-2 pb-3">Game Title</p>
                     </div>
                 </div>

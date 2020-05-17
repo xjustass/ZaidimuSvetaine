@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
-  <a class="navbar-brand" href="/"> VDU Games</a>
+  <a class="pr-3" href="/"><img src="{{ asset('img/Logo_Final.png') }}" style="width: 50px"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -31,7 +31,7 @@
         <a class="nav-link" href="/about">About Us</a>
       </li>
     </ul>
-    
+
     <form class="form-inline my-2 my-lg-0 mr-md-2">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -40,7 +40,7 @@
     @guest
     <a class="nav-link" href="{{ route('login') }}" > <i class="fas fa-gamepad"></i> Login  </a>
     <a class="nav-link" href="{{ route('register') }}" > <i class="fas fa-key"></i> Register  </a>
-   
+
 
     @else
     <ul class="navbar-nav navbar-right">
