@@ -16,11 +16,11 @@
                     <img class="d-block w-100 tales" src="{{ asset('img/Jumpy_Banner.png') }}" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h5></h5>
-                        <p>trumpas nuotraukos/banner aprasymas</p>
+                        <p></p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100 tales" src="https://hdwallsource.com/img/2017/10/heroes-of-the-storm-video-game-hd-wallpaper-61888-63745-hd-wallpapers.jpg" alt="Second slide">
+                    <img class="d-block w-100 tales" src="{{ asset('img/Eternal_Banner.png') }}" alt="Second slide">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100 tales" src="https://wallpapertag.com/wallpaper/full/b/c/d/237829-free-download-fallout-4-wallpaper-1080p-1920x1080.jpg" alt="Third slide">
@@ -67,8 +67,8 @@
             <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
                 <div class="card gametilecard">
                     <div class="card-body text-center">
-                        <img class="tileimage" src="{{ asset('img/Jumpy_Icon.png') }}">
-                        <p class="card-text textgreen pt-2 pb-3">Game Title</p>
+                        <img class="tileimage" src="{{ asset('img/Eternal_Icon.png') }}">
+                        <p class="card-text textgreen pt-2 pb-3">Eternal Return</p>
                     </div>
                 </div>
             </div>
