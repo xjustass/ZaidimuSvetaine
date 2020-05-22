@@ -23,15 +23,9 @@ class PagesController extends Controller
         $game5 = simplexml_load_file('https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=261550&format=xml');
 
 
-
-
-
             //-Joke--
 
             $joke1 = Joke::find(1)->joke;
-
-
-
 
             $data = array(
                 'game1_count'=> $game1->player_count,
@@ -51,7 +45,4 @@ class PagesController extends Controller
         return view('pages.about');
     }
 
-    public function submit_game(){
-        return view('pages.submit_game');
-    }
 }

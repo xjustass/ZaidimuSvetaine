@@ -15,28 +15,48 @@
                     <div class="card-header" style="text-align: left; border: none;background: #BDE626; font-weight: bold; font-size: 200%; border-top-left-radius: 15px;  border-top-right-radius: 15px; color:#474747">{{ __('Marketing materials:') }}</div>
 
                     <div class="card-body" style="background: #BDE626; border-bottom-left-radius: 15px;  border-bottom-right-radius: 15px">
-                        <form>
+                        <form action="{{ route('games.store') }}" method="POST" enctype="multipart/form-data">
+                            @csrf
                             <div class="row">
                                 <div class="col-xs-12 col-lg-5 col-md-12 col-xl-5">
                                     <div class="form-group row">
                                         <label style ="color:#474747; font-weight: bold" for="exampleFormControlTextarea1">Game title:</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+
+                                        @if ($errors->first('title'))
+                                        <div class="alert alert-danger" role="alert">{{ $errors->first('title') }}</div>
+                                        @endif
+
+
+                                        <textarea class="form-control" name="title"id="exampleFormControlTextarea1" rows="1"></textarea>
+
+
                                     </div>
 
                                     <div class="form-group">
-                                        <label style ="color:#474747; font-weight: bold" for="exampleFormControlSelect2">Select categories:</label>
-                                        <select multiple class="form-control" id="exampleFormControlSelect2">
-                                            <option>Platformer</option>
-                                            <option>Strategy</option>
-                                            <option>First person shooter</option>
-                                            <option>Dar koks nors</option>
-                                            <option>Dar koks nors</option>
+                                        <label style ="color:#474747; font-weight: bold" for="categories">Select categories:</label>
+
+                                        @if ($errors->first('categories'))
+                                        <div class="alert alert-danger" role="alert">{{ $errors->first('categories') }}</div>
+                                        @endif
+
+                                        <select multiple="multiple" class="form-control" name="categories[]" id="categories">
+                                            <option disabled selected value="">Select categories </option>
+                                            @foreach($categories as $category)
+                                            <option value="{{$category->id}}">{{$category->name}} </option>
+                                            @endforeach
                                         </select>
+
+
                                     </div>
 
                                     <div class="form-group">
                                         <label style ="color:#474747; font-weight: bold" for="exampleFormControlFile1">Upload icon:</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+
+                                        @if ($errors->first('icon'))
+                                        <div class="alert alert-danger" role="alert">{{ $errors->first('icon') }}</div>
+                                        @endif
+
+                                        <input type="file" name="icon" class="form-control-file" id="exampleFormControlFile1">
                                     </div>
                                 </div>
 
@@ -45,12 +65,16 @@
                                 <div class="col-xs-12 col-lg-6 col-md-12 col-xl-6">
                                     <div class="form-group row">
                                         <label style ="color:#474747; font-weight: bold" style ="color:#474747; font-weight: bold" for="exampleFormControlTextarea1">Description:</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+
+                                        @if ($errors->first('description'))
+                                        <div class="alert alert-danger" role="alert">{{ $errors->first('description') }}</div>
+                                        @endif
+                                        <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="7"></textarea>
                                     </div>
 
                                     <label style ="color:#474747; font-weight: bold" for="exampleFormControlFile1">Upload game files:</label>
                                     <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="customFile">
+                                        <input type="file" class="custom-file-input" name="game_files" id="customFile">
                                         <label class="custom-file-label" for="customFile">Choose a file...</label>
                                     </div>
                                 </div>

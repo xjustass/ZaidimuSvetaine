@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GamesController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 
@@ -16,7 +17,6 @@ use Illuminate\Support\Facades\Storage;
 
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
-Route::get('/submit_game', 'PagesController@submit_game');
 
 
 Auth::routes();
@@ -48,7 +48,9 @@ Route::get('/test', function() {
       //  ->header('Content-Disposition', "attachment; filename=$filename");
 
 
-
-
     //Storage::disk('google')->put('test.txt', 'Hello World');
 });
+
+Route::get('/submit_game', 'GamesController@create');
+
+Route::post('/gameupload', 'GamesController@store')->name('games.store');
