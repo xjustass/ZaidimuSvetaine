@@ -50,7 +50,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label style ="color:#474747; font-weight: bold" for="exampleFormControlFile1">Upload icon (max 8mb):</label>
+                                        <label style ="color:#474747; font-weight: bold" for="exampleFormControlFile1">Upload icon 1:1 (max 8mb):</label>
 
                                         @if ($errors->first('icon'))
                                         <div class="alert alert-danger" role="alert">{{ $errors->first('icon') }}</div>
