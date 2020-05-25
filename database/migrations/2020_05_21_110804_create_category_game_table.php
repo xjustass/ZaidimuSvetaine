@@ -20,6 +20,8 @@ class CreateCategoryGameTable extends Migration
             $table->unsignedBigInteger('game_id');
             $table->foreign('game_id')->references('id')->on('games');
 
+            $table->primary(['category_id', 'game_id']);
+
 
         });
     }
