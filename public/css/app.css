@@ -10982,3 +10982,14 @@ body {
   min-height: calc(100vh - 128px);
 }
 
+.navbar-default .navbar-nav > li.dropdown:hover > a,
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+  background-color: #e7e7e7;
+  color: #555555;
+}
+
+li.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+

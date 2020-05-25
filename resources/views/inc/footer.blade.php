@@ -13,10 +13,11 @@
                 </div>
                 <div class="col-3 textgray">
                     <div>
-                        <div>Categories</div>
-                        <div>About us</div>
-                        <div>Sign in/ Log in</div>
-                        <div>My Account</div>
+
+                        <div><a>Categories</a></div>
+                        <div> <a href="/about">About us</a></div>
+                        <div> <a href="{{ route('login') }}">Log in</a></div>
+                        <div><a>My Account</a></div>
                     </div>
                 </div>
 

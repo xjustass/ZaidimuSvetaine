@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Joke;
+use App\Category;
 
 class PagesController extends Controller
 {
@@ -26,6 +27,7 @@ class PagesController extends Controller
             //-Joke--
 
             $joke1 = Joke::find(1)->joke;
+            $categories = Category::all();
 
             $data = array(
                 'game1_count'=> $game1->player_count,
@@ -33,8 +35,10 @@ class PagesController extends Controller
                 'game3_count'=>$game3->player_count,
                 'game4_count'=>$game4->player_count,
                 'game5_count'=>$game5->player_count,
-                'joke'=>$joke1
+                'joke'=>$joke1,
+                'categories'=> $categories
                 );
+
 
        // return view('pages.index', compact('game1_count'));
 

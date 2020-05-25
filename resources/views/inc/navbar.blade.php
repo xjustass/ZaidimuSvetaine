@@ -11,15 +11,17 @@
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Categories
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Platformer</a>
-          <a class="dropdown-item" href="#"></a>
-          <a class="dropdown-item" href="#">Platformer</a>
-          <a class="dropdown-item" href="#">Platformer</a>
+        <div class="dropdown-menu mt-1" aria-labelledby="navbarDropdown">
 
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+
+            @php($cats = App\Category::all())
+
+            @if(count($cats)> 0)
+                @foreach($cats as $cat)
+        <a class="dropdown-item" href="/category/{{$cat->id}}">{{$cat->name}} </a>
+                    <div class="dropdown-divider"></div>
+                @endforeach
+            @endif
         </div>
       </li>
 

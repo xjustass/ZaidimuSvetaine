@@ -41,9 +41,11 @@
 
                                         <select multiple="multiple" class="form-control" name="categories[]" id="categories">
                                             <option disabled selected value="">Select categories </option>
+
                                             @foreach($categories as $category)
                                             <option value="{{$category->id}}">{{$category->name}} </option>
                                             @endforeach
+
                                         </select>
 
 
