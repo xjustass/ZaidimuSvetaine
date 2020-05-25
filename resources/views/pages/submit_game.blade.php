@@ -50,7 +50,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label style ="color:#474747; font-weight: bold" for="exampleFormControlFile1">Upload icon:</label>
+                                        <label style ="color:#474747; font-weight: bold" for="exampleFormControlFile1">Upload icon (max 8mb):</label>
 
                                         @if ($errors->first('icon'))
                                         <div class="alert alert-danger" role="alert">{{ $errors->first('icon') }}</div>
@@ -72,8 +72,13 @@
                                         <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="7"></textarea>
                                     </div>
 
-                                    <label style ="color:#474747; font-weight: bold" for="exampleFormControlFile1">Upload game files:</label>
+                                    <label style ="color:#474747; font-weight: bold" for="exampleFormControlFile1">Upload game files(.apk .zip .exe, max: 150mb):</label>
                                     <div class="custom-file">
+
+                                        @if ($errors->first('game_files'))
+                                        <div class="alert alert-danger" role="alert">{{ $errors->first('game_files') }}</div>
+                                        @endif
+
                                         <input type="file" class="custom-file-input" name="game_files" id="customFile">
                                         <label class="custom-file-label" for="customFile">Choose a file...</label>
                                     </div>

@@ -24,10 +24,25 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/test', function() {
+
     $filename = 'test.txt';
 
+
+    /* Įkėlimas į diską
+
+        Kelti failą iš request
+        Prieš keliant patikrinti ar egzistuoja failas su tokiu vardu
+        Leisti įkelti tik .apk .exe .zip formatus
+
+        Atsisiuntimui išsaugot:
+        failo vardą
+    */
+    Storage::disk('google')->put('test2.txt', 'Hello World');
+
+
+    // Failo siuntimas
     $dir = '/';
-    $recursive = false; // Get subdirectories also?
+    $recursive = false; // Get subdirectories?
     $contents = collect(Storage::cloud()->listContents($dir, $recursive));
 
     $file = $contents
@@ -38,17 +53,18 @@ Route::get('/test', function() {
 
   //  return $file; // array with file info
 
-    $rawData = Storage::cloud()->get($file['path']);
+    $rawData = Storage::cloud()->get($file['path']); // File path
 
-
+    // donwload(FILE_PATH, FILE_NAME)
     return Storage::cloud()->download($file['path'],$filename);
+
 
     //return response($rawData, 200)
       //  ->header('ContentType', $file['mimetype'])
       //  ->header('Content-Disposition', "attachment; filename=$filename");
 
 
-    //Storage::disk('google')->put('test.txt', 'Hello World');
+
 });
 
 Route::get('/submit_game', 'GamesController@create');

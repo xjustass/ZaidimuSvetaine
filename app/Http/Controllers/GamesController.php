@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image as Image;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 use App\Game;
 use App\Category;
 
@@ -52,15 +53,16 @@ class GamesController extends Controller
     {
 
        // $this->authorize('create', Game::class);
-
+        // tarpinis kintamasis
        $g = $this->validateRequest();
 
+       //priskiriamos kategorijos ir pasalinamos is request saraso
         $cats=$g['categories'];
         unset($g['categories']);
 
-
          $game = Game::create($g);
 
+         //kiekviena kategorija irasma i category_game lentele
         foreach($cats as $c){
 
             $category = Category::find($c);
@@ -70,10 +72,11 @@ class GamesController extends Controller
 
        // $cats = $request->input('categories');
         $this->storeImage($game);
+        $this->storeGameFiles($game);
 
         $this->game = $game;
 
-        return redirect('/about');
+        return redirect('/');
     }
 
     /**
@@ -127,8 +130,9 @@ class GamesController extends Controller
          $r = request()->validate([
             'title' => 'required|min:3',
             'description' => 'required',
-            'icon' => 'required|file|image|max:8000',
-            'categories' => 'required|array|min:1'
+            'icon' => 'required|file|image|max:8000|dimensions:ratio=1/1',
+            'categories' => 'required|array|min:1',
+            'game_files' => 'required|file|mimes:zip,apk,exe|max:200048'
         ]);
 
 
@@ -149,6 +153,33 @@ class GamesController extends Controller
 
             $image = Image::make(public_path('storage/' . $game->icon))->fit(300, 300, null, 'top-left');
             $image->save();
+        }
+    }
+
+    private function storeGameFiles($game)
+    {
+        if (request()->has('game_files')) {
+            $disk = Storage::disk('google');
+
+            $sourceFile = request()->file('game_files');
+            //Failas su galune
+            $filenameWithExt =  $sourceFile->getClientOriginalName();
+            // TIk failo vardas
+            $filename= pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            //TIk galune
+            $extension = request()->file('game_files')->getClientOriginalExtension();
+
+            //Failo vardas ikelimui
+            $targetFile = $filename.'_'.time().'.'.$extension;
+
+
+            // Duomenu atnaujinimas apie zaidima
+            $game->game_files = $targetFile;
+            $game->save();
+
+            //Ikelimas
+            $disk->put($targetFile, fopen($sourceFile, 'r+'));
+           // $file->save();
         }
     }
 
