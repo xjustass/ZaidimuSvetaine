@@ -151,7 +151,8 @@ class GamesController extends Controller
                 'icon' => request()->icon->store('uploads', 'public'),
             ]);
 
-            $image = Image::make(public_path('storage/' . $game->icon))->fit(300, 300, null, 'top-left');
+            $image = Image::make(public_path('storage/' . $game->icon));
+            //->fit(300, 300, null, 'top-left');
             $image->save();
         }
     }
