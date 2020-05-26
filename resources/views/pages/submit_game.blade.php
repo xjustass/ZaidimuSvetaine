@@ -71,8 +71,18 @@
                                         @if ($errors->first('description'))
                                         <div class="alert alert-danger" role="alert">{{ $errors->first('description') }}</div>
                                         @endif
-                                        <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="7"></textarea>
+                                        <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="5"></textarea>
                                     </div>
+
+
+
+                                    <label style ="color:#474747; font-weight: bold" for="exampleFormControlFile1">Upload game screenshots:</label>
+                                    <div class="custom-file">
+                                        <input type="file" name="screenshots" class="form-control-file" id="customScreenshots" multiple>
+
+                                    </div>
+
+
 
                                     <label style ="color:#474747; font-weight: bold" for="exampleFormControlFile1">Upload game files(.apk .zip .exe, max: 150mb):</label>
                                     <div class="custom-file">
@@ -80,11 +90,13 @@
                                         @if ($errors->first('game_files'))
                                         <div class="alert alert-danger" role="alert">{{ $errors->first('game_files') }}</div>
                                         @endif
+                                        <input type="file" name="game_files" class="form-control-file" id="customFile">
 
-                                        <input type="file" class="custom-file-input" name="game_files" id="customFile">
-                                        <label class="custom-file-label" for="customFile">Choose a file...</label>
                                     </div>
                                 </div>
+
+
+
                             </div>
 
                             <div><br></div>
