@@ -23,7 +23,9 @@
             <div class="col-xs-12 col-lg-4 col-md-6 col-xl-2">
                 <div class="card gametilecard">
                     <div class="card-body text-center">
+                    <a href="{{url('/game/'.$game->id)}}">
                         <img class="tileimage" src="{{ asset('storage/'.$game->icon) }}">
+                    </a>
                         <p class="card-text textgreen pt-2 pb-3">{{$game->title}}</p>
                     </div>
                 </div>
