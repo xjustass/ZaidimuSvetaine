@@ -60,7 +60,7 @@
             <p class="textgreen">Goal of this website:</p>
         </div>
         <div class="col-12">
-            <p class="textlightgray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor sollicitudin tempus. Vestibulum et viverra mi. Nulla at nunc sapien. Suspendisse facilisis ullamcorper nisi, ut rhoncus tortor pellentesque quis. Ut elementum dolor eget velit sollicitudin, ac hendrerit nisi egestas. Duis facilisis laoreet justo, nec eleifend nisi tempor ut. Pellentesque tortor lectus, ultricies sit amet sem id, consectetur volutpat risus. Cras at sodales eros. Vivamus dapibus at nisl ut tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean lectus urna, aliquet vitae ligula sit amet, porta pretium dolor. Nam bibendum ante et orci consectetur, eu lacinia diam egestas. Donec a malesuada nulla. Curabitur volutpat libero in ornare molestie. Etiam a hendrerit nibh.</p>
+            <p class="textlightgray">This website was made as a project by a few university students. Our goal is to share our love and passion for video games as well as create a platform where students could share their projects. Here students can submit their own games and try out games that were made by other students. Our main goal, however, is to get a 10 from Internet Infrastructure lecture.</p>
         </div>
 
     </div>
