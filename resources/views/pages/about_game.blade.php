@@ -2,7 +2,7 @@
 
 @section('content')
     <br>
-    <h1 class="textgreen" style="text-align: center">Game Title</h1>
+<h1 class="textgreen" style="text-align: center">{{$game->title}}</h1>
 
     <div class="container my-4">
 
@@ -142,7 +142,7 @@
                 <div class="card-body text-center">
                     <div class="col-lg-10 col-xs-12 col-lg-auto col-md-12">
                         <div style= "border-radius: 20px; padding: 8px; border: 5px solid #BDE626;">
-                            <p class="textlightgray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor sollicitudin tempus. Vestibulum et viverra mi. Nulla at nunc sapien. Suspendisse facilisis ullamcorper nisi, ut rhoncus tortor pellentesque quis. Ut elementum dolor eget velit sollicitudin, ac hendrerit nisi egestas. Duis facilisis laoreet justo, nec eleifend nisi tempor ut. Pellentesque tortor lectus, ultricies sit amet sem id, consectetur volutpat risus. Cras at sodales eros. Vivamus dapibus at nisl ut tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean lectus urna, aliquet vitae ligula sit amet, porta pretium dolor. Nam bibendum ante et orci consectetur, eu lacinia diam egestas. Donec a malesuada nulla. Curabitur volutpat libero in ornare molestie. Etiam a hendrerit nibh.</p>
+                        <p class="textlightgray"> {{$game->description}}</p>
                         </div>
                     </div>
                 </div>

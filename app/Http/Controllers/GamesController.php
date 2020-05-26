@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use App\Game;
 use App\Category;
+use DB;
 
 class GamesController extends Controller
 {
@@ -25,7 +26,7 @@ class GamesController extends Controller
      */
     public function index()
     {
-        $games = Game::all();
+
     }
 
     /**
@@ -87,7 +88,15 @@ class GamesController extends Controller
      */
     public function show($id)
     {
-        //
+        $game = Game::where('id', $id)->first();
+        if ($game === null) {
+            abort(404);
+        }
+
+
+
+
+        return view('pages.about_game')->with('game',$game);
     }
 
     /**
@@ -122,6 +131,30 @@ class GamesController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function showCategory($id)
+    {
+        $categories = Category::All();
+
+
+
+        $category = Category::where('id', $id)->first();
+
+        if ($category === null) {
+            abort(404);
+         }
+        //dd($category);
+
+
+        $games = $category->games;
+
+        //dd($games);
+
+        $cat_name = $category->name;
+
+
+        return view('pages.category')->with('games',$games)->with('category',$cat_name);
     }
 
  private function validateRequest()
