@@ -17,6 +17,7 @@ class CreateGamesTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('icon');
+            $table->string('images');
             $table->string('description');
             $table->string('game_files')->nullable();
             $table->unsignedBigInteger('user_id');

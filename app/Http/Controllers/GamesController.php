@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use App\Game;
 use App\Category;
+use DB;
 
 class GamesController extends Controller
 {
@@ -25,7 +26,7 @@ class GamesController extends Controller
      */
     public function index()
     {
-        $games = Game::all();
+
     }
 
     /**
@@ -53,6 +54,7 @@ class GamesController extends Controller
     {
 
        // $this->authorize('create', Game::class);
+
         // tarpinis kintamasis
        $g = $this->validateRequest();
 
@@ -62,7 +64,7 @@ class GamesController extends Controller
 
          $game = Game::create($g);
 
-         //kiekviena kategorija irasma i category_game lentele
+         //kiekviena kategorija irasoma i category_game lentele
         foreach($cats as $c){
 
             $category = Category::find($c);
@@ -87,7 +89,15 @@ class GamesController extends Controller
      */
     public function show($id)
     {
-        //
+        $game = Game::where('id', $id)->first();
+        if ($game === null) {
+            abort(404);
+        }
+
+
+
+
+        return view('pages.about_game')->with('game',$game);
     }
 
     /**
@@ -124,6 +134,30 @@ class GamesController extends Controller
         //
     }
 
+    public function showCategory($id)
+    {
+        $categories = Category::All();
+
+
+
+        $category = Category::where('id', $id)->first();
+
+        if ($category === null) {
+            abort(404);
+         }
+        //dd($category);
+
+
+        $games = $category->games;
+
+        //dd($games);
+
+        $cat_name = $category->name;
+
+
+        return view('pages.category')->with('games',$games)->with('category',$cat_name);
+    }
+
  private function validateRequest()
     {
 
@@ -132,7 +166,9 @@ class GamesController extends Controller
             'description' => 'required',
             'icon' => 'required|file|image|max:8000|dimensions:ratio=1/1',
             'categories' => 'required|array|min:1',
-            'game_files' => 'required|file|mimes:zip,apk,exe|max:200048'
+            'game_files' => 'required|file|mimes:zip,apk,exe|max:200048',
+            'screenshots' => 'required',
+            'screenshots.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:4048'
         ]);
 
 
@@ -154,7 +190,30 @@ class GamesController extends Controller
             $image = Image::make(public_path('storage/' . $game->icon));
             //->fit(300, 300, null, 'top-left');
             $image->save();
+
+
+            if(request()->hasfile('screenshots'))
+            {
+
+               foreach(request()->file('screenshots') as $image)
+               {
+                   $name=$image->getClientOriginalName();
+                   $image->move(public_path().'/images/', $name);
+                   $data[] = $name;
+               }
+            }
+
+            $form= new Form();
+            $form->filename=json_encode($data);
+
+
+           $form->save();
         }
+
+
+
+
+
     }
 
     private function storeGameFiles($game)

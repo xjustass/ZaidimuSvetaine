@@ -69,4 +69,15 @@ Route::get('/test', function() {
 
 Route::get('/submit_game', 'GamesController@create');
 
+Route::get('/category/{id}', 'GamesController@showCategory')->name('games.category');
+Route::get('/game/{id}', 'GamesController@show')->name('game');
+
+Route::get('/account', function(){
+
+   return view('pages.account');
+});
+
+
 Route::post('/gameupload', 'GamesController@store')->name('games.store');
+
+
