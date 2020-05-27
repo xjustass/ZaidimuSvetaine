@@ -224,6 +224,7 @@ class GamesController extends Controller
     private function storeGameFiles($game)
     {
         if (request()->has('game_files')) {
+
             $disk = Storage::disk('google');
 
             $sourceFile = request()->file('game_files');
@@ -239,11 +240,13 @@ class GamesController extends Controller
 
 
             // Duomenu atnaujinimas apie zaidima
-            $game->game_files = $targetFile;
-            $game->save();
+
 
             //Ikelimas
             $disk->put($targetFile, fopen($sourceFile, 'r+'));
+
+            $game->game_files = $targetFile;
+            $game->save();
            // $file->save();
         }
     }
