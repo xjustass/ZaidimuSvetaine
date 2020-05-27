@@ -67,7 +67,7 @@ Route::get('/test', function() {
 
 });
 
-Route::get('/submit_game', 'GamesController@create');
+Route::get('/submit_game', 'GamesController@create')->middleware('auth');;
 
 Route::get('/category/{id}', 'GamesController@showCategory')->name('games.category');
 Route::get('/game/{id}', 'GamesController@show')->name('game');
@@ -75,10 +75,11 @@ Route::get('/game/{id}', 'GamesController@show')->name('game');
 Route::get('/account', function(){
 
    return view('pages.account');
-});
+})->middleware('auth');
+
 
 Route::get('/download/{id}', 'GamesController@download')->name('downloadfile');
 
-Route::post('/gameupload', 'GamesController@store')->name('games.store');
+Route::post('/gameupload', 'GamesController@store')->name('games.store')->middleware('auth');
 
 

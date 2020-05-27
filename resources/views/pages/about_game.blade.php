@@ -10,7 +10,7 @@
     </div>
 
 
-    <div class="mx-auto" style="width: 92%">
+    <div class="container" style=" background-color:#575656">
 
         <div class="row justify-content-center mx-auto">
 
@@ -39,44 +39,39 @@
             </div>
         </div>
 
-    </div>
-
-    <br>
-
-    <div class="row justify-content-center mx-auto">
+        <div class="row justify-content-center mx-auto">
 
 
-        <div class="col-xs-12 col-lg-12 col-md-12 col-xl-12">
-            <div class="container">
+            <div class="col-xs-12 col-lg-12 col-md-12 col-xl-12">
+                <div class="container">
 
-                @if (count($photos) > 0)
-                <div class="carousel mt-3" data-flickity='{"lazyLoad": 2, "freescroll": true }'>
-                    @foreach($photos as $photo)
-                        <img class="carousel-image" src=" {{ asset('storage/'.$photo) }}">
-                    @endforeach
-                 </div>
+                    @if (count($photos) > 0)
+                    <div class="carousel mt-3" data-flickity='{"lazyLoad": 2, "freescroll": true }'>
+                        @foreach($photos as $photo)
+                            <img class="carousel-image" src=" {{ asset('storage/'.$photo) }}">
+                        @endforeach
+                     </div>
 
-                @else
-                <h4 class="mt-3">There are no photos</h4>
-            @endif
-            </div>
-            <div class="card gametilecard">
-                <div class="card-body text-center">
-                    <div>
-                    <a href="{{route('downloadfile', $game->id)}}">
-                    <button type="button" class="btn btn-primary btn-lg" style="font-size: 30px ;padding: 20px 50px;background-color: #BDE626; color: #474747; border: none">Download game</button>
-                    </a>
+                    @else
+                    <h4 class="mt-3">There are no photos</h4>
+                @endif
+
+
+                <div class="card gametilecard mt-5">
+                    <div class="text-center pb-5 pt-5" style= "background-color:#575656">
+                        <a href="{{route('downloadfile', $game->id)}}">
+                        <button type="button" class="btn btn-primary btn-lg" style="font-size: 30px ;padding: 20px 50px;background-color: #BDE626; color: #474747; border: none">Download game</button>
+                        </a>
                     </div>
                 </div>
+                </div>
+
+
             </div>
+
         </div>
-        <div class="col-xs-12 col-lg-12 col-md-12 col-xl-12">
-        </div>
+
     </div>
-
-    <br>
-    <br>
-
 
 
 @endsection

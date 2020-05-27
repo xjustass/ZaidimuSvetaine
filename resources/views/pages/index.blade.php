@@ -51,12 +51,13 @@
 
     <!-- Game Tiles -->
 
+    <h2 class="text-center textgreen my-3">Recently uploaded</h2>
 
         <div class="row justify-content-center mx-auto">
             @foreach ($games as $game)
             @if(count($games) < 4 )
 
-            <div class="col-xs-12 col-lg-4 col-md-6 col-xl-2">
+            <div class="col-xs-12 col-lg-4 col-md-6 col-xl-3">
                 <div class="card gametilecard">
                     <div class="card-body text-center">
                     <a href="{{url('/game/'.$game->id)}}">
