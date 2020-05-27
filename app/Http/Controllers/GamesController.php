@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use App\Game;
 use App\Category;
+use App\User;
 use DB;
 
 class GamesController extends Controller
@@ -92,6 +93,7 @@ class GamesController extends Controller
     public function show($id)
     {
         $game = Game::where('id', $id)->first();
+
         if ($game === null) {
             abort(404);
         }
@@ -110,7 +112,9 @@ class GamesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $categories = Category::All();
+        $game = Game::where('id', $id)->first();
+        return view('pages.edit')->with('game',$game)->with('categories',$categories);
     }
 
     /**
@@ -122,6 +126,18 @@ class GamesController extends Controller
      */
     public function update(Request $request, $id)
     {
+
+        $game = Game::where('id', $id)->first();
+
+        $r = request()->validate([
+            'title' => 'required|min:3',
+            'description' => 'required',]);
+
+        $game->title = $r['title'];
+        $game->description = $r['description'];
+        $game->save();
+
+        return redirect('/');
         //
     }
 
@@ -159,6 +175,28 @@ class GamesController extends Controller
 
         return view('pages.category')->with('games',$games)->with('category',$cat_name);
     }
+
+    public function showMyGames()
+    {
+
+        $id = Auth::user()->id;
+
+        if ($id === null) {
+            abort(404);
+         }
+        //dd($category);
+
+
+        $games = Game::where('user_id', $id)->get();
+
+       // dd($games);
+
+        $cat_name = "My games";
+
+
+        return view('pages.category')->with('games',$games)->with('category',$cat_name);
+    }
+
 
     private function validateRequest()
     {

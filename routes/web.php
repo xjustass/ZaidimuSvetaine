@@ -75,11 +75,15 @@ Route::get('/game/{id}', 'GamesController@show')->name('game');
 Route::get('/account', function(){
 
    return view('pages.account');
-})->middleware('auth');
+})->name('account')->middleware('auth');
 
+
+Route::get('/mygames', 'GamesController@showMyGames')->name('mygames')->middleware('auth');
 
 Route::get('/download/{id}', 'GamesController@download')->name('downloadfile');
 
 Route::post('/gameupload', 'GamesController@store')->name('games.store')->middleware('auth');
+Route::get('{id}/edit', 'GamesController@edit')->name('games.edit')->middleware('auth');
+Route::post('{id}/update', 'GamesController@update')->name('games.update')->middleware('auth');
 
 

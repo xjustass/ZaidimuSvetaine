@@ -21,17 +21,17 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100" >
 
     <div id="app">
-        <div class="allbutfooter">
+        <div class="wrapper flex-grow-1">
             @include('inc/navbar')
             @yield('content')
             @yield('content1')
         </div>
-        @include('inc/footer')
-    </div>
 
+    </div>
+    @include('inc/footer')
 
     <script src="{{asset('css/flickity.pkgd.min.js')}}"></script>
 </body>

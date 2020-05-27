@@ -61,6 +61,19 @@
                         <a href="{{route('downloadfile', $game->id)}}">
                         <button type="button" class="btn btn-primary btn-lg" style="font-size: 30px ;padding: 20px 50px;background-color: #BDE626; color: #474747; border: none">Download game</button>
                         </a>
+
+                        @auth
+                        @if ($game->user_id == Auth::user()->id)
+                        <a class="ml-2" href={{ route('games.edit', $game->id) }}>
+                            <button type="button" class="btn btn-primary btn-lg" style="font-size: 30px ;padding: 20px 50px;background-color: #BDE626; color: #474747; border: none">Edit</button>
+                        </a>
+                        @endif
+                        @endauth
+
+
+
+
+
                     </div>
                 </div>
                 </div>
