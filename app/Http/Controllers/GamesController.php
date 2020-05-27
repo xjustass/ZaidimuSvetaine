@@ -53,6 +53,7 @@ class GamesController extends Controller
      */
     public function store(Request $request)
     {
+        ini_set('memory_limit','2048M');
 
        // $this->authorize('create', Game::class);
 
@@ -223,6 +224,7 @@ class GamesController extends Controller
 
     private function storeGameFiles($game)
     {
+
         if (request()->has('game_files')) {
 
             $disk = Storage::disk('google');
