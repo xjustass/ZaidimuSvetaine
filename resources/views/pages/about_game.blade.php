@@ -43,8 +43,9 @@
             <div class="col-xs-12 col-lg-12 col-md-12 col-xl-12">
                 <div class="container">
 
+
                     @if (count($photos) > 0)
-                    <div class="carousel mt-3" data-flickity='{"lazyLoad": 2, "freescroll": true }'>
+                    <div class="carousel mt-3" data-flickity='{"lazyLoad": 2, "imagesLoaded": true, "freescroll": true }'>
                         @foreach($photos as $photo)
                             <img class="carousel-image" src=" {{ asset('storage/'.$photo) }}">
                         @endforeach
