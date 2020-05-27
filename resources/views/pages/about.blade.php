@@ -15,7 +15,7 @@
             <div class="col-xs-12 col-lg-3 col-md-6 col-xl-3">
                 <div class="card gametilecard">
                     <div class="card-body text-center">
-                        <img class="card-img aboutsusphotos" src={{ asset('img/deivis.jpg') }} >
+                        <img class="card-img aboutsusphotos" src={{ asset('img/justas.jpg') }} >
                         <p class="card-text textgreen pt-3" style="font-size: 120%">Justas Arštikaitis</p>
                         <p class="card-text textlightgray pb-3">Administrator/Backend Programmer</p>
                     </div>
@@ -33,7 +33,7 @@
             <div class="col-xs-12 col-lg-3 col-md-6 col-xl-3">
                 <div class="card gametilecard">
                     <div class="card-body text-center">
-                        <img class="card-img aboutsusphotos" src={{ asset('img/deivis.jpg') }} >
+                        <img class="card-img aboutsusphotos" src={{ asset('img/saulius.jpg') }} >
                         <p class="card-text textgreen pt-3" style="font-size: 120%">Saulius Švelnys</p>
                         <p class="card-text textlightgray pb-3">Frontend Programmer</p>
                     </div>
@@ -42,7 +42,7 @@
             <div class="col-xs-12 col-lg-3 col-md-6 col-xl-3">
                 <div class="card gametilecard">
                     <div class="card-body text-center">
-                        <img class="card-img aboutsusphotos" src={{ asset('img/deivis.jpg') }} >
+                        <img class="card-img aboutsusphotos" src={{ asset('img/goda.jpg') }} >
                         <p class="card-text textgreen pt-3" style="font-size: 120%">Goda Jurskytė</p>
                         <p class="card-text textlightgray pb-3">Webpage Designer</p>
                     </div>

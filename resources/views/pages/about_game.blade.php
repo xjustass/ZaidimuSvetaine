@@ -34,8 +34,6 @@
                 <div style= "border-radius: 20px; padding: 8px; border: 3px solid #BDE626;">
                     <p class="text-white"> {{$game->description}}</p>
                 </div>
-
-
             </div>
         </div>
 
@@ -65,13 +63,9 @@
                     </div>
                 </div>
                 </div>
-
-
             </div>
 
         </div>
 
     </div>
-
-
 @endsection
