@@ -9,7 +9,7 @@
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -22,9 +22,7 @@
                 <div class="carousel-item">
                     <img class="d-block w-100 tales" src="{{ asset('img/Eternal_Banner.png') }}" alt="Second slide">
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100 tales" src="https://wallpapertag.com/wallpaper/full/b/c/d/237829-free-download-fallout-4-wallpaper-1080p-1920x1080.jpg" alt="Third slide">
-                </div>
+
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -84,38 +82,6 @@
     </div>
 
     <br>
-
-    <div class="card-deck mx-auto">
-
-        <div class="row justify-content-center mx-auto">
-            <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
-                <div class="card gametilecard">
-                    <div class="card-body text-center mr-20">
-                        <img class="tileimage" src="{{ asset('img/Jumpy_Icon.png') }}">
-                        <p class="card-text textgreen pt-2 pb-3">Game Title</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
-                <div class="card gametilecard">
-                    <div class="card-body text-center">
-                        <img class="tileimage" src="{{ asset('img/Jumpy_Icon.png') }}">
-                        <p class="card-text textgreen pt-2 pb-3">Game Title</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-lg-4 col-md-6 col-xl-4">
-                <div class="card gametilecard">
-                    <div class="card-body text-center">
-                        <img class="tileimage" src="{{ asset('img/Jumpy_Icon.png') }}">
-                        <p class="card-text textgreen pt-2 pb-3">Game Title</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 
     <br>
 
