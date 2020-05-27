@@ -77,6 +77,7 @@ Route::get('/account', function(){
    return view('pages.account');
 });
 
+Route::get('/download/{id}', 'GamesController@download')->name('downloadfile');
 
 Route::post('/gameupload', 'GamesController@store')->name('games.store');
 

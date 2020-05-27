@@ -94,10 +94,10 @@ class GamesController extends Controller
             abort(404);
         }
 
+        $categories = $game->categories;
+        $photos = json_decode($game->images);
 
-
-
-        return view('pages.about_game')->with('game',$game);
+        return view('pages.about_game')->with('game',$game)->with('photos',$photos)->with('categories',$categories);
     }
 
     /**
@@ -158,7 +158,7 @@ class GamesController extends Controller
         return view('pages.category')->with('games',$games)->with('category',$cat_name);
     }
 
- private function validateRequest()
+    private function validateRequest()
     {
 
          $r = request()->validate([
@@ -168,7 +168,7 @@ class GamesController extends Controller
             'categories' => 'required|array|min:1',
             'game_files' => 'required|file|mimes:zip,apk,exe|max:200048',
             'screenshots' => 'required',
-            'screenshots.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:4048'
+            'screenshots.*' => 'image|file|mimes:jpeg,png,jpg,gif,svg|max:10048'
         ]);
 
 
@@ -190,26 +190,30 @@ class GamesController extends Controller
             $image = Image::make(public_path('storage/' . $game->icon));
             //->fit(300, 300, null, 'top-left');
             $image->save();
-
-
-            if(request()->hasfile('screenshots'))
-            {
-
-               foreach(request()->file('screenshots') as $image)
-               {
-                   $name=$image->getClientOriginalName();
-                   $image->move(public_path().'/images/', $name);
-                   $data[] = $name;
-               }
-            }
-
-            $form= new Form();
-            $form->filename=json_encode($data);
-
-
-           $form->save();
         }
 
+        // Saving screenshots
+
+
+        if($files=request()->file('screenshots'))
+        {
+            $data=array();
+           foreach($files as $image)
+           {
+
+               $name=$image->store('uploads', 'public');
+              // dd($name);
+               $img = Image::make(public_path('storage/' . $name));
+
+               $img->save();
+
+               $data[] = $name;
+
+           }
+
+           $game->images=json_encode($data);
+           $game->save();
+        }
 
 
 
@@ -241,6 +245,29 @@ class GamesController extends Controller
             $disk->put($targetFile, fopen($sourceFile, 'r+'));
            // $file->save();
         }
+    }
+
+    public function download($id)
+    {
+        $game = Game::where('id', $id)->first();
+        $filename = $game->game_files;
+
+        $dir = '/';
+        $recursive = false; // Get subdirectories?
+        $contents = collect(Storage::cloud()->listContents($dir, $recursive));
+
+        $file = $contents
+            ->where('type', '=', 'file')
+            ->where('filename', '=', pathinfo($filename, PATHINFO_FILENAME))
+            ->where('extension', '=', pathinfo($filename, PATHINFO_EXTENSION))
+            ->first(); // there can be duplicate file names!
+
+        //dd($file);
+        //$rawData = Storage::cloud()->get($file['path']); // File path
+
+        // donwload(FILE_PATH, FILE_NAME)
+        return Storage::cloud()->download($file['path'],$filename);
+
     }
 
 

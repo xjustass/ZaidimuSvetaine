@@ -29,7 +29,6 @@
 
                                         <textarea class="form-control" name="title"id="exampleFormControlTextarea1" rows="1"></textarea>
 
-
                                     </div>
 
                                     <div class="form-group">
@@ -78,7 +77,10 @@
 
                                     <label style ="color:#474747; font-weight: bold" for="exampleFormControlFile1">Upload game screenshots:</label>
                                     <div class="custom-file">
-                                        <input type="file" name="screenshots" class="form-control-file" id="customScreenshots" multiple>
+                                        @if ($errors->first('screenshots'))
+                                        <div class="alert alert-danger" role="alert">{{ $errors->first('screenshots') }}</div>
+                                        @endif
+                                        <input type="file" name="screenshots[]" class="form-control-file" id="customScreenshots" multiple>
 
                                     </div>
 

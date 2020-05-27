@@ -13,8 +13,6 @@
                 </div>
                 <div class="col-3 textgray">
                     <div>
-
-                        <div><a>Categories</a></div>
                         <div> <a href="/about">About us</a></div>
                         <div> <a href="{{ route('login') }}">Log in</a></div>
                         <div><a>My Account</a></div>

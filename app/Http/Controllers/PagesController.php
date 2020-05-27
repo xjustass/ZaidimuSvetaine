@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Joke;
 use App\Category;
+use App\Game;
 
 class PagesController extends Controller
 {
@@ -39,10 +40,13 @@ class PagesController extends Controller
                 'categories'=> $categories
                 );
 
+            $g = Game::all()->take(10);
+          //  dd($games);
+
 
        // return view('pages.index', compact('game1_count'));
 
-        return view('pages.index')->with($data);
+        return view('pages.index')->with($data)->with('games',$g);
     }
 
     public function about(){
